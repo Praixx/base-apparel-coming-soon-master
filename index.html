@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Base Apparel coming soon page</title>
+
+  <!-- Link to normalize css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+  integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+  crossorigin="anonymous" />
+
+  <!-- link to font family -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Link to style sheets -->
+  <link rel="stylesheet" href="styles.css">
+
+
+ 
+</head>
+<body>
+
+  <div id="page">
+    <header>
+      <div class="top-logo">
+        <img src="images/logo.svg" class="mobile-logo">
+      </div>
+    </header>
+
+    <main>
+
+      <picture>
+        <source media="(min-width: 1020px)" srcset="images/hero-desktop.jpg" class="desktop-illustration">
+        <img src="images/hero-mobile.jpg" class="mobile-illustration">
+      </picture>
+
+      <div class="container">
+        <img src="images/logo.svg" class="desktop-logo ">
+        <h1><span>We're</span> coming soon</h1>
+        <p>Hello fellow shoppers! We're currently building our new fashion store. 
+          Add your email below to stay up-to-date with announcements and our launch deals.
+        </p>
+        <form>
+      
+          <input type="text" name="email" id="email" placeholder=" Email Address ">
+          <label for="email" class="error-icon"><img src="images/icon-error.svg"></label>
+         
+          <button type="submit" ><img src="images/icon-arrow.svg"></button>
+        </form>
+        <!-- to be filled in by javascript -->
+        <p class="error-msg"  id="error-message">Please provide a valid email</p>
+      </div>
+
+    </main>
+  </div>
+
+
+  
+ 
+  
+  <!-- <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </p>
+  </footer> -->
+
+  <script src="script.js"></script>
+</body>
+</html>
